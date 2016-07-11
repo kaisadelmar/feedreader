@@ -32,7 +32,7 @@ $(function() {
          * and that the URL is not empty.
          */
 
-         it('has a URL defined', function() {
+         it('have a URL defined', function() {
            allFeeds.forEach(function(feed) {
              expect(feed.url).toBeDefined();
              expect(feed.url).not.toBe('');
@@ -45,7 +45,7 @@ $(function() {
          * and that the name is not empty.
          */
 
-         it('has a name defined', function() {
+         it('have a name defined', function() {
            allFeeds.forEach(function(feed) {
              expect(feed.name).toBeDefined();
              expect(feed.name).not.toBe('');
@@ -61,7 +61,7 @@ $(function() {
         expect($('body').hasClass('menu-hidden')).toBe(true);
       });
 
-      it('menu visibility changes when clicked', function() {
+      it('displays when clicked and hides when clicked again', function() {
         $('.menu-icon-link').trigger('click');
         expect($('body').hasClass('menu-hidden')).toBe(false);
         $('.menu-icon-link').trigger('click');
