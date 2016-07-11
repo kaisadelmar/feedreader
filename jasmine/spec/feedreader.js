@@ -57,7 +57,7 @@ $(function() {
     /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function() {
 
-      it('hidden by default', function() {
+      it('is hidden by default', function() {
         expect($('body').hasClass('menu-hidden')).toBe(true);
       });
 
