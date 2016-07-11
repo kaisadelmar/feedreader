@@ -18,7 +18,6 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
         /* Ensure feed has a URL defined and that the URL is not empty. */
          it('have a URL defined', function() {
            allFeeds.forEach(function(feed) {
@@ -26,7 +25,6 @@ $(function() {
              expect(feed.url).not.toBe('');
            });
          });
-
 
         /* Ensure each feed has a name defined and that the name is not empty. */
          it('have a name defined', function() {
@@ -54,7 +52,6 @@ $(function() {
       });
 
     });
-
 
     /* Test suite named "Initial Entries" */
     describe('Initial Entries', function() {
